@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>College Management System</title>
+<link rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+</head>
+<body>
+<h1>KIIT University</h1>
+    <br>
+    <br>
+     <div class="row">
+        <div class="col-lg-3">
+            <h4><a th:href="@{/college/details/students}" class="btn btn-primary btn-sm mb-3">List of students</a></h4>
+            <h4><a th:href="@{/college/details/facultys}" class="btn btn-primary btn-sm mb-3">List of faculty</a></h4>
+         </div>
+     </div>
+
+</body>
+</html>

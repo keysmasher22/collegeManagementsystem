@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>College Management System</title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+</head>
+<body>
+<h1>KIIT</h1>
+<div class="container">
+<div class="row">
+<h3> Student By ID</h3>
+</div>
+<table class="table table-striped table-bordered">
+<thead class="table-dark">
+<tr>
+<th>Student Name</th>
+<th>Address</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody >
+<tr th:each="student: ${students}">
+
+ <td th:text="${student.name}"></td>
+<td th:text="${student.address}"></td>
+<td th:text="${student.weight}"></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
